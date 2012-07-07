@@ -1,4 +1,4 @@
-# Class: _ssh::service
+# Class: ssh::service
 #
 # This module manages the ssh service
 #
@@ -6,13 +6,13 @@
 #
 # Actions: Manages ssh service
 #
-# Requires: _ssh::package, _ssh::config
+# Requires: ssh::package, ssh::config
 #
 # Sample Usage: 
 #
-# class { '_ssh::service': }
+# class { 'ssh::service': }
 #
-class _ssh::service {
+class ssh::service {
 
     service { 'ssh':
         ensure    => running,
